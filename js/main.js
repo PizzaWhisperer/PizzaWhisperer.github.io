@@ -383,7 +383,7 @@ var main = (function () {
     };
 
     Terminal.prototype.ping = function () {
-        window.open('mailto:mathilde.raynal@epfl.ch');   
+        window.open("mailto:mathilde.raynal@epfl.ch?subject=Let's work together!");   
         var result = "Email client opened in new window.";
         this.type(result, this.unlock.bind(this));  
     };
