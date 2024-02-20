@@ -1,0 +1,38 @@
+"Peer-Reviewed Publications:
+            <li>
+                S&P23 On the (In) security of Peer-to-Peer Decentralized Machine Learning
+                Dario Pasquini, Mathilde Raynal, Carmela Troncoso
+            </li>
+            <li>
+                PoPETS 2023 
+                Private Collection Matching Protocols
+                Kasra EdalatNejad, Mathilde Raynal, Wouter Lueks, Carmela Troncoso
+            </li>
+            <li>
+                EuroS&P 2022 
+                HyperLogLog: Exponentially Bad in Adversarial Settings
+                Kenny Patterson, Mathilde Raynal
+            </li>
+            <li>
+                NIST 3rd PQC Standardization Conference 2021
+                PQ-WireGuard: We Did It Again
+                Mathilde Raynal, Aymeric Genet, Yolan Romailler 
+            </li>
+            
+        Pre-Prints
+            <li>
+                Under Submission 
+                On the con￿ict of Robustness and Learning in Collaborative Learning
+            Mathilde Raynal, Carmela Troncoso
+            </li>
+            <li>
+                arXiv 2023 
+                Can Decentralized Learning be more Robust than Federated Learning?
+                Mathilde Raynal, Dario Pasquini, Carmela Troncoso
+            </li>
+            <li>
+                arXiv 2021 
+                Image obfuscation for Privacy-Preserving Machine Learning
+                Mathilde Raynal, Mathias Humbert, Radhakrishna Achanta
+            </li>
+"
