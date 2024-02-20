@@ -61,7 +61,7 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {
-        "welcome_message": "Hello, my name is Mathilde Raynal and I am a PhD student in Security and Privacy @EPFL.\n The available commands on this website are: <i> whoami  </i> to print a short description of me; <i> ping </i> to email me; and <i> ls </i> and <i> cat </i> to list and access files hosted here such as my cv and list of publications. You can press TAB for autocompletion, and double click to skip text rolling.",
+        "welcome_message": "Hello, my name is Mathilde Raynal and I am a PhD student in Security and Privacy @EPFL.\n The available commands on this website are: <i> whoami  </i> to print a short description of me; <i> ping </i> to email me; and <i> ls </i> and <i> cat </i> to list and access files hosted here, i.e., my cv. You can press TAB for autocompletion, and double click to skip text rolling.",
 
         "whoami": "I am currently doing a PhD on the limitations of AI-based solutions, supervised by Prof. Carmela Troncoso within the SPRING Lab. My current research is about AI-based content moderation and Collaborative Machine Learning. I enjoy thinking about how adversaries can subvert systems. Before that, I did my BS and a joint MS in Cybersecurity @EPFL and ETHZ, with a focus on applied cryptography. I interned at places such as the Cyber-Defense Campus and Kudelksi Security.\nOn the personal side, I am passionate about calatheas and V60.",
         "cv": "<a href='docs/cv.pdf' type='application/pdf' target='_blank'>Here is my cv</a>",
