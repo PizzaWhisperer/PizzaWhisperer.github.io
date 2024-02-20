@@ -20,7 +20,7 @@ var configs = (function () {
         ping_help: "Send an email.",
         reboot_help: "Reboot the system.",
         sudo_help: "Execute a command as the superuser.",
-        welcome: "Hello, my name is Mathilde Raynal and I am a PhD student working on the intersection of AI and Security and Privacy @EPFL.\n The available commands on this website are: <i> whoami  </i> to print a short description of me; <i> ping </i> to email me; and <i> ls </i> and <i> cat </i> to list and access files hosted here such as my cv and list of publications. You can press TAB for autocompletion, and double click to skip text rolling.",
+        welcome: "Hello world! My name is Mathilde Raynal and I am a PhD research assistant @EPFL working on Security and Privacy of AI-based systems.\n The available commands on this website are: <i> whoami  </i> to print a short description of me; <i> ping </i> to email me; and <i> ls </i> and <i> cat </i> to list and access files hosted here such as my cv and list of publications. You can press TAB for autocompletion, and double click to skip text rolling.",
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message",
         invalid_command_message: "<value>: command not found.",
