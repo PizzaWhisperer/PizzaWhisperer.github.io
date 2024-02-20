@@ -301,6 +301,9 @@ var main = (function () {
         var cmdComponents = this.cmdLine.value.trim().split(" ");
         this.lock();
         switch (cmdComponents[0]) {
+            case cmds.PING.value:
+                this.ping();
+                break;
             case cmds.CAT.value:
                 this.cat(cmdComponents);
                 break;
@@ -315,9 +318,6 @@ var main = (function () {
                 break;
             case cmds.CLEAR.value:
                 this.clear();
-                break;
-            case cmds.PING.value:
-                this.ping();
                 break;
             case cmds.REBOOT.value:
                 this.reboot();
@@ -362,7 +362,7 @@ var main = (function () {
         this.type(result, this.unlock.bind(this));
     }
 
-    Terminal.prototype.whoami = function (cmdComponents) {
+    Terminal.prototype.whoami = function () {
         var result = "I am currently doing a PhD on the limitations of AI-based solutions, supervised by Prof. Carmela Troncoso within the SPRING Lab. My current research is about AI-based content moderation and Collaborative Machine Learning. I enjoy thinking about how adversaries can subvert systems. Before that, I did my BS and a joint MS in Cybersecurity @EPFL and ETHZ, with a focus on applied cryptography. I interned at places such as the Cyber-Defense Campus and Kudelksi Security.\nOn the personal side, I am passionate about calatheas and V60.";
         this.type(result, this.unlock.bind(this));
     };
@@ -383,14 +383,9 @@ var main = (function () {
     };
 
     Terminal.prototype.ping = function () {
-        window.location.href = "mailto:user@example.com?subject=Subject&body=message%20goes%20here";
-    //   });
-    //     Email.send({
-    //         To: 'mathilde.raynal@epfl.ch',
-    //     })
-    //         .then(function (message) {
-    //             alert("mail sent successfully")
-    //         });        
+        window.open('mailto:mathilde.raynal@epfl.ch');   
+        var result = "Email client opened in new window.";
+        this.type(result, this.unlock.bind(this));  
     };
     
 
