@@ -68,7 +68,7 @@ var files = (function () {
         "cv": "<a href='docs/cv.pdf' type='application/pdf' target='_blank'>Here is my cv</a>",
         // "publications": docs/publications.txt,
 
-        "links and contact": "<a href='docs/contact.txt' target='_blank'>Here is my contact</a>",
+        "links and contact": "email: mathilde[dot]raynal[at]epfl[dot]ch\nLinkedIn: <a href='https://www.linkedin.com/in/mathilde-raynal'>/in/mathilde-raynal</a>\ngithub: <a href='https://github.com/PizzaWhisperer'>/github.com/PizzaWhisperer</a>",
     };
     return {
         getInstance: function (options) {
@@ -213,7 +213,7 @@ var main = (function () {
                 this.cmdLine.value = "cat " + file + " ";
                 this.handleCmd();
             }.bind(this, file);
-            element.appendChild(document.createTextNode(capFirst(file.replace(/\.[^/.]+$/, "").replace(/_/g, " "))));
+            element.appendChild(document.createTextNode((file.replace(/\.[^/.]+$/, "").replace(/_/g, " "))));
             this.sidenav.appendChild(element);
             this.sidenavElements.push(element);
         }
@@ -339,6 +339,8 @@ var main = (function () {
         } else if (cmdComponents[1] === "cv") {
             window.open('./docs/cv.pdf');
             result = "CV opened in new tab.";
+        } else if (cmdComponents[1] === "links") {
+            result = files.getInstance()["links and contact"];
         } else if (!cmdComponents[1] || (!cmdComponents[1] === configs.getInstance().welcome_file_name || !files.getInstance().hasOwnProperty(cmdComponents[1]))) {
             result = configs.getInstance().file_not_found.replace(configs.getInstance().value_token, cmdComponents[1]);
         } else {
