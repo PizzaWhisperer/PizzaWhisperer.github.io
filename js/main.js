@@ -448,8 +448,15 @@ var main = (function () {
             if (i < text.length) {
                 var char = text.charAt(i);
                 var isNewLine = char === "\n";
-                output.innerHTML += isNewLine ? "<br/>" : char;
-                i++;
+                var isCode = char === "<";
+                if (!isCode) {
+                    output.innerHTML += isNewLine ? "<br/>" : char;
+                    i++;
+                } else {
+                    var closeCode = i + text.substring(i).indexOf("</") + 4;
+                    output.innerHTML += (text.substring(i, closeCode).replace(new RegExp("\n", 'g'), "<br/>"));
+                    i = closeCode;
+                }
                 if (!skipped) {
                     setTimeout(typer, isNewLine ? timer * 2 : timer);
                 } else {
