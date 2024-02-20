@@ -68,7 +68,7 @@ var files = (function () {
         "cv": "<a href='docs/cv.pdf' type='application/pdf' target='_blank'>Here is my cv</a>",
         // "publications": docs/publications.txt,
 
-        "links and contact": "email: mathilde[dot]raynal[at]epfl[dot]ch\nLinkedIn: <a href='https://www.linkedin.com/in/mathilde-raynal'>/in/mathilde-raynal</a>\ngithub: <a href='https://github.com/PizzaWhisperer'>/github.com/PizzaWhisperer</a>",
+        "links and contact": "email: mathilde[dot]raynal[at]epfl[dot]ch \n LinkedIn: <a href=\"https://www.linkedin.com/in/mathilde-raynal\">/in/mathilde-raynal</a> \n github: <a href=\"https://github.com/PizzaWhisperer\">/github.com/PizzaWhisperer</a> \n scholar: <a href=\"https://scholar.google.com/citations?user=M6xLmNoAAAAJ\">/scholar/user=M6xLmNoAAAAJ</a>"
     };
     return {
         getInstance: function (options) {
